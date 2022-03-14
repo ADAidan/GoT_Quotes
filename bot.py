@@ -5,7 +5,7 @@ from discord.ext import commands
 from quotes import quotes
 
 intents = discord.Intents.default()
-TOKEN = process.env.TOKEN
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
